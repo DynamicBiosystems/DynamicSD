@@ -16,6 +16,37 @@ We recommend using Conda to manage project dependencies for ensuring environment
     ```bash
     conda activate DynamicSD
     ```
+### Quick start
+---
+- mkref
+
+```shell
+wget ftp://ftp.ensembl.org/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+wget ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz
+
+gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+gunzip Homo_sapiens.GRCh38.99.gtf.gz
+
+DynamicSD mkref \
+ --genome_name Homo_sapiens_GRCh38 \
+ --fasta Homo_sapiens.GRCh38.dna.primary_assembly.fa \
+ --gtf Homo_sapiens.GRCh38.99.gtf
+```
+
+- count
+
+```shell
+ DynamicISD count \
+ --id samplename \
+ --inputdir rawdata \
+ --whitelist-fastq  2D250806020_C2.fq.gz\
+ --he-image HE.tif \
+ --probe-set  probeV2_human.csv \
+ --gtf Homo_sapiens.GRCh38.99.gtf\
+ --transcriptome Homo_sapiens_GRCh38 \
+ --cellbin \
+ --cores 32
+```
 
 ## Standards for H&E Images in the SD Process
 ---
@@ -28,4 +59,5 @@ We recommend using Conda to manage project dependencies for ensuring environment
 ## Usage
 ---
 For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
+
 
