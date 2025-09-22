@@ -1,7 +1,7 @@
 
 
 ## Environment
-
+---
 We recommend using Conda to manage project dependencies for ensuring environment consistency.
 
 
@@ -17,5 +17,15 @@ We recommend using Conda to manage project dependencies for ensuring environment
     conda activate DynamicSD
     ```
 
+## Standards for H&E Images in the SD Process
+---
+    Pixel Accuracy: ≤ 0.65 µm/pixel
+
+    Pixel Dimensions (X, Y): ≤ 30,000
+
+    Tissue Area Percentage: ≥ 80%
+
 ## Usage
+---
 For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
+
