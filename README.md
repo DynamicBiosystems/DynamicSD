@@ -36,7 +36,7 @@ DynamicSD mkref \
 - count
 
 ```shell
- DynamicISD count \
+ DynamicSD count \
  --id samplename \
  --inputdir rawdata \
  --whitelist-fastq  2D250806020_C2.fq.gz\
@@ -59,5 +59,6 @@ DynamicSD mkref \
 ## Usage
 ---
 For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
+
 
 
