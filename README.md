@@ -60,5 +60,16 @@ DynamicSD mkref \
 ---
 For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
 
+**Specifying Input FASTQs to DynamicSD count**
+|  **Argument**  |  **Brief Description**  |
+|  :--------: |  :-----:  |
+|    --id   |   Final sample name,required   |
+|    --inputdir   |   Raw data path,required   |
+|    --whitelist-fastq   |   FastQ sequence containing whitelist,required   |
 
+**FASTQ file naming convention**
 
+To serve as input for DynamicSD, FASTQ files must adhere to standard naming conventions：
+[Sample Name]_S1_L00[Lane Number] _[Read Type]_001.fastq.gz Where Read Type is one of:
+- `R1`: Read 1
+- `R2`: Read 2
