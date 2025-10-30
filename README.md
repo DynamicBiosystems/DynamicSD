@@ -48,12 +48,10 @@ DynamicSD mkref \
  --cores 32
 ```
 
-## Standards for H&E Images in the SD Process
-
-
 ## Usage
 ---
 For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
+
 ## Analysis
 ### Inputs
 
@@ -110,6 +108,7 @@ https://github.com/DynamicBiosystems/DynamicSDAssist
 DynamicSD supports cell segmentation for both HE and DAPI staining. Typically, we only perform cell segmentation on HE images, controlled by the `--cellbin` parameter. If DAPI-based cell segmentation is required to supplement the results, the `--dapi-alignment` and `--DAPI` parameters should be added for control.
 
 ### Outputs
+#### Overview of output structure
 ---
 As an example, a `DynamicSD count` analysis will display a message similar to the following after completion:
 ```
@@ -146,8 +145,21 @@ As an example, a `DynamicSD count` analysis will display a message similar to th
 └── web_summary.html
 ```
 
+#### Gene Expression
 
+When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical structure to accommodate cell segmentation and various binning levels.
 
+|  **File or Directory Name**  |  **Description**  |
+|  :--------: |  :-----:  |
+|    8um   |   This is the 8μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
+|    16um   |   This is the 16μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
+|    50um   |   This is the 50μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
+|    bin_summary.csv   |  Metrics Summary for Different Bin Sizes   |
+|  CellBin  |  Folder containing segmented outputs. containing the `filtered_feature_bc_matrix`, `spatial` and `filtered_feature_bc_matrix.h5` files |
+|insitufocus|The `insitufocus` directory contains the essential input files for the InsituFocus software, which is used to visually inspect and validate the cell segmentation results,containing the `Cells.geojson`, `chip_region.tif `, `dynamicsd.insitufocus`, and `GeneCoord.csv` files.  |
+|metrics_summary.csv|Run summary metrics in CSV format|
+|raw_feature_bc_matrix|Raw Matrix Results at 2μm Resolution,containing the `barcodes.tsv.gz`, `features.tsv.gz`, and `matrix.mtx.gz` files.|
+|web_summary.html|Run summary metrics and plots in HTML format|
 
 
 
@@ -168,4 +180,5 @@ As an example, a `DynamicSD count` analysis will display a message similar to th
 
 
   
+
 
