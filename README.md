@@ -49,27 +49,123 @@ DynamicSD mkref \
 ```
 
 ## Standards for H&E Images in the SD Process
----
-    Pixel Accuracy: ≤ 0.65 µm/pixel
 
-    Pixel Dimensions (X, Y): ≤ 30,000
-
-    Tissue Area Percentage: ≥ 80%
 
 ## Usage
 ---
 For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
+## Analysis
+### Inputs
 
-**Specifying Input FASTQs to DynamicSD count**
+---
+
+**Input Parameters for DynamicSD count**
 |  **Argument**  |  **Brief Description**  |
 |  :--------: |  :-----:  |
 |    --id   |   Final sample name,required   |
 |    --inputdir   |   Raw data path,required   |
 |    --whitelist-fastq   |   FastQ sequence containing whitelist,required   |
+|  --he-image  |  Single H&E brightfield image  |
+|--probe-set|CSV file specifying the probe set used, if any|
+|--r2-length|Hard trim the input Read 2 to this length before analysis|
+|--gtf|genome annotation file|
+|--transcriptome|Path of folder containing transcriptome reference|
+|--outputdir|Output file path|
+|--cellbin|Perform Cellbin analysis|
+|--manual-registration|Perform manual registration|
+|--micrometer-pixel|micrometer per pixel|
+|--umi-alignment|Manual Alignment File for UMI and HE Images|
+|--dapi-alignment|Manual Alignment File for DAPI and HE Images|
+|--DAPI|DAPI images for supplementary cell segmentation results|
+|--CBposition|position of Cell Barcode(s) on the barcode read(0-base)|
+|--UMIposition|position of the UMI on the barcode read, same as CBposition(0-base)|
+|--cores|set max cores the pipeline may request at one time|
+
+
+
 
 **FASTQ file naming convention**
 
 To serve as input for DynamicSD, FASTQ files must adhere to standard naming conventions：
-[Sample Name]_S1_L00[Lane Number] _[Read Type]_001.fastq.gz Where Read Type is one of:
+`[Sample Name]`_S1_L00`[Lane Number]` _`[Read Type]`_001.fastq.gz Where Read Type is one of:
 - `R1`: Read 1
 - `R2`: Read 2
+  
+**DynamicSD Image Recommendations**
+ ```
+    Pixel Accuracy: ≤ 0.65 µm/pixel
+
+    Pixel Dimensions (X, Y): ≤ 30,000
+
+    Tissue Area Percentage: ≥ 80%
+```
+
+**Manual Alignment for DynamicSD**
+
+In most cases, DynamicSD will automatically align microscope images with Umi distribution images. If manual alignment is necessary, choose the option that best fits your experiment.
+https://github.com/DynamicBiosystems/DynamicSDAssist
+
+**Cell Segmentation**
+
+DynamicSD supports cell segmentation for both HE and DAPI staining. Typically, we only perform cell segmentation on HE images, controlled by the `--cellbin` parameter. If DAPI-based cell segmentation is required to supplement the results, the `--dapi-alignment` and `--DAPI` parameters should be added for control.
+
+### Outputs
+---
+As an example, a `DynamicSD count` analysis will display a message similar to the following after completion:
+```
+├── 16um
+│   ├── bin16_adata.h5ad
+│   ├── filtered_feature_bc_matrix
+│   ├── filtered_feature_bc_matrix.h5
+│   └── spatial
+├── 50um
+│   ├── bin50_adata.h5ad
+│   ├── filtered_feature_bc_matrix
+│   ├── filtered_feature_bc_matrix.h5
+│   └── spatial
+├── 8um
+│   ├── bin8_adata.h5ad
+│   ├── filtered_feature_bc_matrix
+│   ├── filtered_feature_bc_matrix.h5
+│   └── spatial
+├── bin_summary.csv
+├── CellBin
+│   ├── filtered_feature_bc_matrix
+│   ├── filtered_feature_bc_matrix.h5
+│   └── spatial
+├── insitufocus
+│   ├── Cells.geojson
+│   ├── chip_region.tif 
+│   ├── dynamicsd.insitufocus
+│   └── GeneCoord.csv
+├── metrics_summary.csv
+├── raw_feature_bc_matrix
+│   ├── barcodes.tsv.gz
+│   ├── features.tsv.gz
+│   └── matrix.mtx.gz
+└── web_summary.html
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
