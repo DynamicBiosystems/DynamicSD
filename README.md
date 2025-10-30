@@ -158,7 +158,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 |  CellBin  |  Folder containing segmented outputs. containing the `filtered_feature_bc_matrix`, `spatial` and `filtered_feature_bc_matrix.h5` files |
 |insitufocus|The `insitufocus` directory contains the essential input files for the InsituFocus software, which is used to visually inspect and validate the cell segmentation results,containing the `Cells.geojson`, `chip_region.tif `, `dynamicsd.insitufocus`, and `GeneCoord.csv` files.  |
 |metrics_summary.csv|Run summary metrics in CSV format|
-|raw_feature_bc_matrix|Raw Matrix Results at 2μm Resolution,containing the `barcodes.tsv.gz`, `features.tsv.gz`, and `matrix.mtx.gz` files.|
+|raw_feature_bc_matrix|Raw Matrix Results at 1μm Resolution,containing the `barcodes.tsv.gz`, `features.tsv.gz`, and `matrix.mtx.gz` files.|
 |web_summary.html|Run summary metrics and plots in HTML format|
 
 
@@ -180,5 +180,6 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 
 
   
+
 
 
