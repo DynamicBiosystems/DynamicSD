@@ -7,6 +7,7 @@ We recommend using Conda to manage project dependencies for ensuring environment
 
 
 1.  **Use Conda to create an environment and install the dependencies.**
+   
     We provide an environment.yml file for quick environment setup. Run the following command, and Conda will automatically create a new environment named DynamicSD and install all required packages.
     ```bash
     conda env create -f environment.yml -n DynamicSD
@@ -180,6 +181,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 
 
   
+
 
 
 
