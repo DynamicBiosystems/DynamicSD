@@ -101,11 +101,11 @@ To serve as input for DynamicSD, FASTQ files must adhere to standard naming conv
 **Manual Alignment for DynamicSD**
 
 In most cases, DynamicSD will automatically align microscope images with Umi distribution images. If manual alignment is necessary, choose the option that best fits your experiment.
-https://github.com/DynamicBiosystems/DynamicSDAssist
+[https://github.com/DynamicBiosystems/DynamicSDAssist](https://github.com/DynamicBiosystems/DynamicSD-Assist)
 
 **Cell Segmentation**
 
-DynamicSD supports cell segmentation for both HE and DAPI staining. Typically, we only perform cell segmentation on HE images, controlled by the `--cellbin` parameter. If DAPI-based cell segmentation is required to supplement the results, the `--dapi-alignment` and `--DAPI` parameters should be added for control.
+DynamicSD performs cell segmentation on both HE and DAPI stained images. By default, cell segmentation is carried out only on HE images, regulated by the `--cellbin` parameter. If DAPI-based cell segmentation is required to supplement the results, the `--dapi-alignment` and `--DAPI` parameters can be added for control.
 
 ### Outputs
 #### Overview of output structure
@@ -180,6 +180,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 
 
   
+
 
 
 
