@@ -61,10 +61,9 @@ DynamicSD mkref \
  --cellbin \
  --cores 32
 ```
-
+Note that the probe-set file is located in the db subdirectory under the software's installation directory.
 ## Usage
 ---
-For detailed usage instructions, API documentation, examples, and important notes, please refer to the **`DynamicSD User Manual.pdf`** document.
 
 ## Analysis
 ### Inputs
@@ -194,6 +193,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 
 
   
+
 
 
 
