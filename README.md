@@ -19,6 +19,7 @@ We recommend using Conda to manage project dependencies for ensuring environment
     ```
 
 3.  **Software installation**
+   
       Dowload DynamicSD from [here](https://github.com/DynamicBiosystems/DynamicSD/releases).
       ```bash
       mkdir DynamicSD
@@ -193,6 +194,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 
 
   
+
 
 
 
