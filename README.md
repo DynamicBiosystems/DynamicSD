@@ -19,12 +19,12 @@ We recommend using Conda to manage project dependencies for ensuring environment
     ```
 
 3.  **Software installation**
-   ```bash
-   Dowload DynamicSD from [here](https://github.com/DynamicBiosystems/DynamicSD/releases).
-   mkdir DynamicSD
-   tar -zxf dynamicsd_v1.0.3.tar.gz -C DynamicSD
-   Prepend the DynamicSD/dynamicst_v1.0.3/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
-   ```
+      Dowload DynamicSD from [here](https://github.com/DynamicBiosystems/DynamicSD/releases).
+      ```bash
+      mkdir DynamicSD
+      tar -zxf dynamicsd_v1.0.3.tar.gz -C DynamicSD
+      Prepend the DynamicSD/dynamicst_v1.0.3/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
+      ```
   
 
    
@@ -193,6 +193,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 
 
   
+
 
 
 
