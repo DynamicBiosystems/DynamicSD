@@ -25,6 +25,11 @@ We recommend using Conda to manage project dependencies for ensuring environment
       mkdir DynamicSD
       tar -zxf dynamicsd_v1.0.3.tar.gz -C DynamicSD
       Prepend the DynamicSD/dynamicst_v1.0.3/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
+      
+      vim ~/.bashrc
+      # Add the following line at the end of the file, replacing the placeholder with the absolute path to the software installation directory:
+      export PATH=$PATH:/path/to/software/installation/DynamicSD/dynamicst_v1.0.3/bin
+      Note: In the actual instruction, you should explicitly tell the user to replace /path/to/software/installation (or the whole path) with their specific installation directory.
       ```
   
 
@@ -80,7 +85,7 @@ DynamicSD mkref \
  --cellbin \
  --cores 32
 ```
-Note that the probe-set file is located in the db subdirectory under the software's installation directory.
+Note: The probe-set file resides in the db subdirectory of the software installation directory, while the whitelist-fastq file is provided by the company.
 ## Usage
 ---
 
