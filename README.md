@@ -8,17 +8,20 @@ We recommend using Conda to manage project dependencies for ensuring environment
 
 1.  **Use Conda to create an environment and install the dependencies.**
    
-    We provide an environment.yml file for quick environment setup. Run the following command, and Conda will automatically create a new environment named DynamicSD and install all required packages.
+    We provide an `environment.yml` file for quick environment setup. Run the following command, and Conda will automatically create a new environment named `DynamicSD` and install all required packages.
+    
+    Download Conda: [https://repo.anaconda.com/miniconda/Miniconda3-py39_23.11.0-1-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-py39_23.11.0-1-Linux-x86_64.sh)
+   
     ```bash
     conda env create -f environment.yml -n DynamicSD
     ```
 
-2.  **Activate the environment using the following command**
+3.  **Activate the environment using the following command**
     ```bash
     conda activate DynamicSD
     ```
 
-3.  **Software installation**
+4.  **Software installation**
    
       Dowload DynamicSD from [here](https://github.com/DynamicBiosystems/DynamicSD/releases).
       ```bash
