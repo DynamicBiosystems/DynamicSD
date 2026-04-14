@@ -77,10 +77,10 @@ DynamicSD mkref \
  DynamicSD count \
  --id samplename \
  --inputdir rawdata \
- --whitelist-fastq  2D250806020_C2.fq.gz\
+ --whitelist-fastq  2D250806020_C2.fq.gz \
  --he-image HE.tif \
  --probe-set  probeV2_human.csv \
- --gtf Homo_sapiens.GRCh38.99.gtf\
+ --gtf Homo_sapiens.GRCh38.99.gtf \
  --transcriptome Homo_sapiens_GRCh38 \
  --cellbin \
  --cores 32
