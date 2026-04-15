@@ -76,18 +76,51 @@ DynamicSD mkref \
 
 - count
 
+For polyA-based capture
+
 ```shell
  DynamicSD count \
  --id samplename \
  --inputdir rawdata \
  --whitelist-fastq  2D250806020_C2.fq.gz \
  --he-image HE.tif \
+ --r2-length 50 \
+ --gtf Homo_sapiens.GRCh38.99.gtf \
+ --transcriptome Homo_sapiens_GRCh38 \
+ --cellbin \
+ --cores 32
+```
+
+For probe-based capture
+```shell
+ DynamicSD count \
+ --id samplename \
+ --inputdir rawdata \
+ --whitelist-fastq  2D250806020_C2.fq.gz \
+ --he-image HE.tif \
+ --r2-length 91 \
  --probe-set  probeV2_human.csv \
  --gtf Homo_sapiens.GRCh38.99.gtf \
  --transcriptome Homo_sapiens_GRCh38 \
  --cellbin \
  --cores 32
 ```
+
+For array-based capture
+
+```shell
+ DynamicSD count \
+ --id samplename \
+ --inputdir rawdata \
+ --whitelist-fastq  2D250806020_C2.fq.gz \
+ --he-image HE.tif \
+  --r2-length 91 \
+ --gtf Homo_sapiens.GRCh38.99.gtf \
+ --transcriptome Homo_sapiens_GRCh38 \
+ --cellbin \
+ --cores 32
+```
+
 Note: The probe-set file resides in the db subdirectory of the software installation directory, while the whitelist-fastq file is provided by the company.
 ## Usage
 ---
