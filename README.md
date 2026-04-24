@@ -29,10 +29,8 @@ We recommend using Conda to manage project dependencies for ensuring environment
       tar -zxf dynamicsd_v1.0.3.tar.gz -C DynamicSD
       Prepend the DynamicSD/dynamicst_v1.0.3/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
       
-      vim ~/.bashrc
-      # Add the following line at the end of the file, replacing the placeholder with the absolute path to the software installation directory:
-      export PATH=$PATH:/path/to/software/installation/DynamicSD/dynamicst_v1.0.3/bin
-      Note: In the actual instruction, you should explicitly tell the user to replace /path/to/software/installation (or the whole path) with their specific installation directory.
+      echo "export PATH=\$PATH:$(pwd)/dynamicsd_v1.0.3/bin" >> ~/.bashrc
+      source ~/.bashrc
       ```
   
 
@@ -84,7 +82,7 @@ For polyA-based capture
  --inputdir rawdata \
  --whitelist-fastq  2D250806020_C2.fq.gz \
  --he-image HE.tif \
- --r2-length 50 \
+ --r2-length 91 \
  --gtf Homo_sapiens.GRCh38.99.gtf \
  --transcriptome Homo_sapiens_GRCh38 \
  --cellbin \
@@ -98,7 +96,7 @@ For probe-based capture
  --inputdir rawdata \
  --whitelist-fastq  2D250806020_C2.fq.gz \
  --he-image HE.tif \
- --r2-length 91 \
+ --r2-length 50 \
  --probe-set  probeV2_human.csv \
  --gtf Homo_sapiens.GRCh38.99.gtf \
  --transcriptome Homo_sapiens_GRCh38 \
