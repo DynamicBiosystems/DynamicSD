@@ -23,13 +23,14 @@ We recommend using Conda to manage project dependencies for ensuring environment
 
 4.  **Software installation**
    
-      Dowload DynamicSD from [here](https://github.com/DynamicBiosystems/DynamicSD/releases).
+      Dowload DynamicSD from [here]([https://github.com/DynamicBiosystems/DynamicSD/releases](https://handover.obs.cn-jssz1.ctyun.cn/software%2Fdynamicsd_v1.0.4.tar.gz?AccessKeyId=ZQMMROORLBRHRFUORXSZ&Expires=1809067173&Signature=Y8rtGEox2GoOSgWul9yW2HwYAQE%3D)).
+    
       ```bash
       mkdir DynamicSD
-      tar -zxf dynamicsd_v1.0.3.tar.gz -C DynamicSD
-      Prepend the DynamicSD/dynamicst_v1.0.3/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
+      tar -zxf dynamicsd_v1.0.4.tar.gz -C DynamicSD
+      Prepend the DynamicSD/dynamicst_v1.0.4/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
       
-      echo "export PATH=\$PATH:$(pwd)/dynamicsd_v1.0.3/bin" >> ~/.bashrc
+      echo "export PATH=\$PATH:$(pwd)/dynamicsd_v1.0.4/bin" >> ~/.bashrc
       source ~/.bashrc
       ```
   
