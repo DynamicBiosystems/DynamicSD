@@ -23,7 +23,7 @@ We recommend using Conda to manage project dependencies for ensuring environment
 
 4.  **Software installation**
    
-      Dowload DynamicSD from [here](https://handover.obs.cn-jssz1.ctyun.cn/software%2Fdynamicsd_v1.0.4.tar.gz?AccessKeyId=ZQMMROORLBRHRFUORXSZ&Expires=1809067173&Signature=Y8rtGEox2GoOSgWul9yW2HwYAQE%3D).
+      Dowload DynamicSD from [here](https://handover.obs.cn-jssz1.ctyun.cn/software/dynamicsd_v1.0.4.tar.gz?AccessKeyId=OUKZD6UNOIZFQKOTXOOX&Expires=1809844579&Signature=bK0LaYZVA9nQG%2B9/d3OpMHnL23E%3D).
     
       ```bash
       mkdir DynamicSD
