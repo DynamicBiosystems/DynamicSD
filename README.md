@@ -30,7 +30,7 @@ We recommend using Conda to manage project dependencies for ensuring environment
       tar -zxf dynamicsd_v1.0.4.tar.gz -C DynamicSD
       Prepend the DynamicSD/dynamicst_v1.0.4/bin directory to your $PATH. This will allow you to invoke the DynamicSD command.
       
-      echo "export PATH=\$PATH:$(pwd)/dynamicsd_v1.0.4/bin" >> ~/.bashrc
+      echo "export PATH=\$PATH:$(pwd)/DynamicSD/dynamicsd_v1.0.4/bin" >> ~/.bashrc
       source ~/.bashrc
       ```
   
