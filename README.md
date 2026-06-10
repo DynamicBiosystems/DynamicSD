@@ -120,6 +120,11 @@ For array-based capture
  --cores 32
 ```
 
+
+DynaSpatial SD Data Standard Analysis Tutorial (Based on Automatic Registration)[here](bilibili.com/video/BV1qCEE6hE2j/?spm_id_from=333.1387.collection.video_card.click).
+DynaSpatial SD Data Standard Analysis Tutorial (Based on Manual Registration)[here](bilibili.com/video/BV1BkEE6wE1Q/?spm_id_from=333.1387.collection.video_card.click).
+DynaSpatial SD Image Preprocessing Tutorial for Data Analysis.[here](bilibili.com/video/BV1E6EE6YEar/?spm_id_from=333.1387.collection.video_card.click).
+
 Note: The probe-set file resides in the db subdirectory of the software installation directory, while the whitelist-fastq file is provided by the company.
 ## Usage
 ---
