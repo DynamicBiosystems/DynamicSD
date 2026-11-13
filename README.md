@@ -199,8 +199,8 @@ As an example, a `DynamicSD count` analysis will display a message similar to th
 │   ├── filtered_feature_bc_matrix
 │   ├── filtered_feature_bc_matrix.h5
 │   └── spatial
-├── 50um
-│   ├── bin50_adata.h5ad
+├── 30um
+│   ├── bin30_adata.h5ad
 │   ├── filtered_feature_bc_matrix
 │   ├── filtered_feature_bc_matrix.h5
 │   └── spatial
@@ -235,7 +235,7 @@ When DynamicSD count is run on DynaSpatial data, the outputs have a hierarchical
 |  :--------: |  :-----:  |
 |    8um   |   This is the 8μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
 |    16um   |   This is the 16μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
-|    50um   |   This is the 50μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
+|    30um   |   This is the 50μm bin size folder, containing the `filtered_feature_bc_matrix`, `spatial`, `filtered_feature_bc_matrix.h5`, and `adata.h5ad` files.   |
 |    bin_summary.csv   |  Metrics Summary for Different Bin Sizes   |
 |  CellBin  |  Folder containing segmented outputs. containing the `filtered_feature_bc_matrix`, `spatial` and `filtered_feature_bc_matrix.h5` files |
 |insitufocus|The `insitufocus` directory contains the essential input files for the InsituFocus software, which is used to visually inspect and validate the cell segmentation results,containing the `Cells.geojson`, `chip_region.tif `, `dynamicsd.insitufocus`, and `GeneCoord.csv` files.  |
